@@ -1,0 +1,6 @@
+/* sacamos a todos los elementos el margen y padding */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
