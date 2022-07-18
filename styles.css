@@ -4,3 +4,36 @@
     margin: 0px;
     font-family: sans-serif;
 }
+
+:root {
+    --altura: 65px;
+}
+
+/* Sección Nav-Bar  */
+#navbar {
+    background-color: red;
+    position: fixed;
+
+    top: 0px;
+    width: 100%;
+    height: var(--altura);
+     
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    font-weight:  700 !important;
+    font-size: 40px;
+    list-style: none !important;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin-top: var(--altura);
+}
