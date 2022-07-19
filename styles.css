@@ -7,11 +7,12 @@
 
 :root {
     --altura: 59px;
+    --rojo: #931010;
 }
 
 /* Sección Nav-Bar  */
 #navbar {
-    background-color: red;
+    background-color: var(--rojo);
     position: fixed;
 
     top: 0px;
@@ -36,7 +37,7 @@
     color: rgb(231, 231, 231);
     text-decoration: none;
     display: block;
-    transition: color, transform, text-shadow 0.2s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 #navbar a:hover {
@@ -46,6 +47,48 @@
 
 }
 
-body {
-    margin-top: var(--altura);
+/* SECCIÓN DE MAIN
+******************** */
+main {
+    /* margin-top: var(--altura); */
+}
+
+/* SECCIÓN DE BIENVENIDA
+******************** */
+#welcome-section {
+    --ancho-alto-avatar: 40vw;
+    --padding-welcome:20px;
+    --max-img:400px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: var(--padding-welcome);
+    padding-top: calc(var(--altura) + var(--padding-welcome));
+    box-sizing: border-box;
+}
+
+ #avatar-container {
+    width: var(--ancho-alto-avatar);
+    height: var(--ancho-alto-avatar);
+    max-width: var(--max-img);
+    max-height: var(--max-img);
+    border-radius: 100%;
+    border: 5px solid white;
+    overflow: hidden;
+ }
+
+#avatar-container img {
+    height: var(--ancho-alto-avatar);
+    max-height: var(--max-img);
+} 
+
+#container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: var(--ancho-alto-avatar);
+    max-height: var(--max-img);
 }
