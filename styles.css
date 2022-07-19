@@ -6,7 +6,7 @@
 }
 
 :root {
-    --altura: 65px;
+    --altura: 59px;
 }
 
 /* Sección Nav-Bar  */
@@ -22,16 +22,28 @@
 
 #navbar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 10px 0px;
     font-weight:  700 !important;
-    font-size: 40px;
+    font-size: 25px;
     list-style: none !important;
+    max-width: 700px;
+    margin: 15px;
+    margin-left: 30px;
 }
 
 #navbar a {
-    color: white;
+    color: rgb(231, 231, 231);
     text-decoration: none;
+    display: block;
+    transition: color, transform, text-shadow 0.2s ease-out;
+}
+
+#navbar a:hover {
+    transform: scale(1.2);
+    text-shadow: white 3px 3px 8px;
+    color: white;
+
 }
 
 body {
